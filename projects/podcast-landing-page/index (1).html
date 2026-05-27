@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="">
+
+    <title>Card creator landing page</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <style type="text/css">
+        body {
+            padding: 5rem;
+        }
+
+        .starter-template {
+            padding: 3rem 0;
+            text-align: left;
+        }
+		.card-body h3 {
+			color: dodgerblue;
+		   font-weight: 200;
+		}
+		.card-body h2 {
+			font-weight: 600;
+			color: #333;
+		}
+		.card-body h4 {
+			margin: 10px 0 20px 0;
+			color: dodgerblue;
+			font-weight: 400;
+		}
+		.card-body h6 {
+			margin: 20px 0;
+		}
+		.card-body li {
+			margin-top: 5px;
+		}
+		p {
+			max-width: 750px;
+		}
+		li p {
+			max-width: 600px;
+			margin: 0;
+			background: #cfd8dc;
+		}	
+
+		figure {
+    width: 100%;
+  margin: 35px 0px 35px -50px;
+		}
+    </style>
+</head>
+
+
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-primary fixed-top">
+        <a class="navbar-brand" href="">Podcasts</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+                <li style="border:1px solid #ddd;border-radius: 10px;" class="nav-item">
+                    <a class="nav-link" href="card-creator-market.html">Top Podcast Card Creator</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="card-creator-mcdc.html">Secondary Podcast Card Creator</a>
+                </li>
+             <li class="nav-item">
+                    <a class="nav-link" href="card-creator-around.html">Around/Archive Podcast Creator</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="example-podcast-full-page.html">Content Studio Full Page Example</a>
+                </li>                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Templates</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown01">
+                        <a class="dropdown-item" href="biloxi-podcast.html">Biloxi template</a>
+						<a class="dropdown-item" href="centre-daily-times-podcast.html">Centre Daily template</a>
+						<a class="dropdown-item" href="charlotte-podcast.html">Charlotte template</a>
+						<a class="dropdown-item" href="el-nuevo-podcast.html">El Nuevo template</a>
+						<a class="dropdown-item" href="fresno-podcast.html">Fresno Bee template</a>
+						<a class="dropdown-item" href="kansas-city-podcast.html">Kansas City template</a>
+						<a class="dropdown-item" href="mcdc-podcast.html">McClatchy DC template</a>
+						<a class="dropdown-item" href="miami-podcast.html">Miami Herald template</a>
+						<a class="dropdown-item" href="raleigh-podcast.html">Raleigh template</a>
+ 						<a class="dropdown-item" href="star-telegram-podcast.html">Star-Telegram template</a>
+						<a class="dropdown-item" href="podcast-without-market-template.html">Template for markets with no podcasts</a>
+
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="starter-template">
+                     <p style="color:red;font-weight:bold;">Note: The Card Creator tools are tested using Google Chrome only.</p>  
+            <h1>Podcast landing page resources</h1><br>
+            <p class="lead">Use this navigation to get the prebuilt HTML for the 10 markets that have podcasts, the template for the rest of the markets, an example podcast page from Content Studio, and create new cards with the card creators.</p>
+            <p style="color:#1282FB;">Note: the templates for the markets with podcasts have a display error for the top podcast cards, but they display fine once in content studio. It's because they are referencing a stylesheet that is optimized for content studio.</p>
+        </div>
+        <h3>Documention</h3>
+        <p style="font-size: 12px;color:dodgerblue;">Note: I use GIFs to help explain the documentation. Click the GIFs to start/stop playback. If while playing, you notice a GIF is too small for you to see well, right click it and select "Open Image in New Tab"</p>
+        <div id="accordion" role="tablist">
+  <div class="card">
+    <div class="card-header" role="tab" id="headingOne">
+      <h5 class="mb-0">
+        <a data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+         Scenario 1: A market adds a podcast
+        </a>
+      </h5>
+    </div>
+
+    <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+      <div class="card-body">
+       <h4>Summary</h4>
+      <h5>Part 1: Market's Top Podcast Section</h5>
+       <ol>
+       	<li>User needs to create a new “Top Podcast Card” and copy that code</li>
+       	<li>User then navigates to the market's Content Studio Podcasts Free HTML widget</li>
+       	<li>User pastes the code from the Card Creator below the last Top Podcast in the HTML </li>
+       	<li>If the market does not have any previous podcasts, the pasting and HTML editing instructions are as follows:
+       	<ol style="list-style-type: lower-alpha;">
+       		<li>paste the HTML from the card creator right after the comment <code>&lt;!-- ****** PASTE MARKET PODCAST FROM CARD CREATOR HERE ****** --&gt;</code>  </li>
+			<li>Next, remove the comment tags wrapping the <code>&lt;div&gt;</code> section that has the market's section heading, remove the comment tags so this  <code>&lt;div&gt;</code> section goes live, and update the text from "Market Podcasts" to whatever market you are editing, i.e. "Sacramento Bee Podcasts"</li>
+       	<li>Finally, towards the top of the HTML you will see a <code>&lt;style&gt;</code>   tag. Just below this you will see a comment  <code>/*MARKET ACCENT COLOR */</code> , change that accent color to the accent color of the market. You can find this info on our Frontify page.</li>
+       	</ol>
+       	</li>
+       	<li>Publish changes</li>
+       </ol>
+       
+        <h5>Part 2: Adding a new podcast to the Podcasts Around McClatchy section</h5>
+       <ol>
+       	<li>User needs to create a new “Around/Archive Podcast Card” and copy that code</li>
+       	<li>On McClatchy DC's FTP server, navigate to mi00s/McClatchyDC/static/creatives/podcasts/around-archive-podcast-iframe.html</li>
+       	<li>edit that file directly, or download it and edit it</li>
+       	<li>Paste the HTML from the card creator tool in the appropriate regional section for that market, i.e. if the Sacramento Bee adds a podcast, add it after the last podcast in the California section</li>
+       	<li>Save that file and re-upload it to the FTP server</li>
+       </ol>
+       
+       <h4>Detailed Instructions</h4>         
+        <h5>Part 1: Market's Top Podcast Section</h5>      
+		  <ol>
+		  	<li><p>In the top navigation, click “Top Podcast Card Creator”</p></li>
+			  <li><p>From here, you need to enter the new podcast information. The first step is adding the artwork.	</p>
+		  		<ol style="list-style-type: lower-alpha;">
+					<li><p>Artwork should be 500x500 pixels. If the artwork has an all white background, please edit it so it has some sort of border around it. </p></li>
+		  			<li><p>Artwork has to be hosted online, so create a new Article in Content Studio that will promote the podcast. Write a short story about it and add the artwork as a related image. Publish this article, and navigate to it in Chrome. </p></li>
+		  			<figure>
+  							<img src="img/cs.png" height=100% width=100% data-alt="img/artwork-content-studio.gif">
+					</figure>
+					<li><p>Right click on the artwork and select “Open image in new tab.” Click and hold on the artwork image in that new window, drag your mouse and the image to anywhere on the Podcast Creator page. The image should then display in a new preview card</p> </li>
+		  			<figure>
+  							<img src="img/adding-art.png" height=100% width=100% data-alt="img/imagedrag.gif">
+					</figure>					
+		  		</ol>
+		  	</li>
+		  	<li><p>After the artwork has been added, the next step is adding all the podcast details. You need to enter the image’s Alt text, Podcast title, Podcast description, and URLs to any services that host the podcast audio. This is shown in the image below</p></li>
+		  			  			<figure>
+  							<img src="img/screen1.png" height=100% width=100%>
+					</figure>		
+		<li><p>Click the "Get Code and Notify McClatchy" button</p></li>			
+		<li><p>You should now have a page that looks like this, with a preview of the card and the code output:</p></li>
+		  			  			<figure>
+  							<img src="img/screen2.png" height=100% width=100%>
+					</figure>		
+        <li><p>Highlight all of the code, right click, and copy it </p></li>					
+		  			<figure>
+  							<img src="img/copying-code.png" height=75% width=75% data-alt="img/copying-code.gif">
+					</figure>	   
+			<li><p>If the marekt you are working with already has its own podcasts, head over to the market's Content Studio. In the file tree you will see "Podcasts", double or triple click that until it opens a new tab. There you will see Banner Options and one of the nested pages under Banner Options is "Podcasts." Double or triple click that until it opens. Now you will see the HTML for the Podcast landing page. I have left comments in the HTML labeled       <code>&lt;-- ****** MARKET PODCAST CARD ****** --&gt;</code> 	and   <code>&lt;-- ****** END MARKET PODCAST CARD ****** --&gt;</code>  After the last (there are only 3 at the time of writing this) <code>&lt;-- ****** END MARKET PODCAST CARD ****** --&gt;</code>  	paste the code you copied from the Card Creator. This is shown in the GIF below:	</p></li>     	 
+		  			<figure>
+  							<img src="img/pasting-cs.png" height=100% width=100% data-alt="img/pasting-cs.gif">
+					</figure>
+			   <li><p>If the market had no previous podcasts, the instructions are the same up until you get to the point where you have to paste into Content Studio, those instructions are as follows:</p>
+       <ol style="list-style-type: lower-alpha">
+       	<li><p>In the market's Podcast Free HTML widget page, find the comment <code>&lt; !--********** PASTE MARKET PODCAST FROM CARD CREATOR HERE  ************** --&gt;</code> and paste your HTML from the Card Creator tool on the next line</p></li>
+       			  <figure>
+  							<img src="img/paste.png" height=100% width=100% data-alt="img/paste.gif">
+					</figure>	 
+       	
+       	<li><p>Next, just above the <code>&lt;!--********** PASTE MARKET PODCAST FROM CARD CREATOR HERE  ************** --&gt;</code> comment, you will see a commented out section labeled <code>&lt;!--**** Update this with Market name ****--&gt;</code> </p>
+       	  <ol style="list-style-type: circle;">
+			  <li><p>Remove the beginning of the comment tag <code>&lt;!--</code> that is just before the <code>&lt;div&gt;</code> tag that is under the <code>&lt;!--**** Update this with Market name ****--&gt;</code></p></li>
+       	  	<li><p>Remove the end of the comment tag <code>--&gt;</code>  that is just after the ending <code>&lt;/div&gt;</code> tag at the end of this "Market Podcasts" section. What these comment tags look like is shown below</p></li>
+       	  	<li><p>Change the text "Market Podcasts" to whatever market you are working on, i.e. "Sacramento Bee Podcasts"</p></li>
+       	  </ol>
+       	</li>
+         			  <figure>
+  							<img src="img/paste.png" height=100% width=100% data-alt="img/sacbee.gif">
+					</figure>	 	
+       	<li><p>Next, in line 4, you will see the start of a "style" tag, and in that style section you will see the comment   <code>/* MARKET ACCENT COLOR */</code></p></li>
+       	<li><p>That 6 digit HEX code needs to be changed to the HEX code associated with the specific market's accent color</p></li>
+       	<li><p>To find this HEX color code, head to our <a href="https://mcclatchy.frontify.com/d/yqB1T2cFAxHO/the-escenic-style-guide#/branding/market-colors-logos" target="_blank">McClatchy Frontify Style Guide</a></p></li>
+       	<li><p>In the left navigation, you will see a list of all our markets, click on the market you are editing, now you will see two colors, one primary and one accent</p></li>
+       	<li><p>Copy that HEX code from the "#" all the way to the last digit. Paste it over the HEX code in the style section of our HTML in Content Studio</p></li>
+         			  <figure>
+  							<img src="img/color.png" height=100% width=100% data-alt="img/color.gif">
+					</figure>	 	       	
+              </ol>
+       </li>   		
+			<li><p>Click "Publish" and you are done with part 1!</p></li>	 
+		  </ol>       
+		  
+<h5>Part 2: Adding a new podcast to the Podcasts Around McClatchy section (Done by the Design Team for now)</h5>
+     <ol>
+     	<li><p>In the top navigation, click "Around/Archive Podcast Card Creator"</p></li>
+     	<li><p>Add all the podcast details just like in Part 1, but you do not need an image for artwork</p></li>
+     	<li><p>Highlight and copy all of the output code. The next step is where Part 2 varies from Part 1</p></li>
+     	<li><p>This process can vary depending on the FTP client you use, but for this document demo below, I am using Filezilla. The first step is to log in with McClatchy DC's FTP credentials</p>
+     		<ol  style="list-style-type: lower-alpha;">
+     			<li><p>On the right panel of Filezilla, navigate to mi00s/McClatchyDC/static/creatives/podcasts. Here you will see a file named "around-archive-podcast-iframe.html"</p></li>
+     			<li><p>Double click that file and it will download it to whatever folder on your computer that you have open in the left panel</p></li>
+		  			<figure>
+  							<img src="img/filezilla.png" height=100% width=100% data-alt="img/filezilla.gif">
+					</figure>	   	     			
+     			<li><p>Now, using Finder (Mac) or Explorer (Windows), navigate to where you downloaded the file. In my example below, I downloaded it to my Documents folder</p></li>
+     			<li><p>Right click it, and open it with your favorite text editor. I used Adobe Brackets, but I also recommend Notepad++ or Sublime Text</p></li>
+       	<li><p>In this HTML you will see comments that tell you what region the code block is for, such as <code>  &lt;!--- Midwest ----&gt;</code></p></li>
+       	<li><p>Depending on what region your market is in, i.e. California, The Carolinas, The Midwest, The Northeast, or the Southeast, you will change where you need to paste the output HTML from the Card Creator Tool</p></li>
+		   <li><p>You will need to go to the area in the HTML that is specific to your market. Each podcast is contained in a <code>&lt;li&gt; &lt;/li&gt;</code> tag. After the last podcast, after its ending <code>&lt;/li&gt;</code> tag, paste your HTML code from the Card Creator Tool.</p></li>
+        <li><p>We will be using the Carolinas as the region in the example below:</p></li>
+            			  <figure>
+  							<img src="img/around.png" height=100% width=100% data-alt="img/around.gif">
+					</figure>	 	
+    		<li><p>Next, back in the top left area of the Filezilla toolbar you will see a blue and a green arrow creating a sort of circle, this is the Refresh button. Click that to make sure it has the most recent save of the HTML file you just edited/saved</p></li>  	      
+    		<li><p>Now that it's refreshed, find your "around-archive-podcast-iframe.html" file in the left pane. Double click it. This will send it over Filezilla to the FTP server</p></li>		
+    		<li><p>Filezilla will warn you that this file already exists, the "overwrite" radio button should already be selected, so just click "Ok" to upload the file and overwrite the old one. Now you're done!</p></li>	
+		  			<figure>
+  							<img src="img/filezilla.png" height=100% width=100% data-alt="img/filezilla2.gif">
+					</figure>	   	       		
+     		</ol>
+     	</li>
+     </ol>          
+      </div>
+    </div>
+  </div>
+  
+   <div class="card">
+    <div class="card-header" role="tab" id="headingTwo">
+      <h5 class="mb-0">
+        <a data-toggle="collapse" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+         Scenario 2: McClatchy DC adds a podcast
+        </a>
+      </h5>
+    </div>
+
+    <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
+      <div class="card-body">
+       <h4>Summary</h4>
+       <h5>Part 1: McClatchyDC.com Top Podcast Section</h5>
+       <ol>
+       	<li>User needs to create a new “Top Podcast Card” and copy that code</li>
+       	<li>User then navigates to McClatchy DC’s Content Studio Podcasts Free HTML widget</li>
+       	<li>User pastes the code from the Card Creator below the last Top Podcast in the HTML</li>
+       	<li>Publish changes</li>
+       </ol>
+       
+       <h5>Part 2: McClatchy DC iFrame for rest of markets</h5>
+       <ol>
+       	<li>User then needs to create a “Secondary Podcast Card” and copy that code</li>
+       	<li>On McClatchy DC’s FTP server, navigate to mi00s/McClatchyDC/static/creatives/podcasts/mcclatchy-dc-iframe.html </li>
+       	<li>Edit that file and paste the code after the final MCDC podcast card</li>
+       	<li>Save file</li>
+       </ol>
+       <h4>Detailed Instructions</h4>         
+       <h5>Part 1: McClatchyDC.com Top Podcast Section</h5>
+		  <ol>
+		  	<li><p>In the top navigation, click “Top Podcast Card Creator”</p></li>
+			  <li><p>From here, you need to enter the new podcast information. The first step is adding the artwork.	</p>
+		  		<ol style="list-style-type: lower-alpha;">
+					<li><p>Artwork should be 500x500 pixels. If the artwork has an all white background, please edit it so it has some sort of border around it. </p></li>
+		  			<li><p>Artwork has to be hosted online, so create a new Article in Content Studio that will promote the podcast. Write a short story about it and add the artwork as a related image. Publish this article, and navigate to it in Chrome. </p></li>
+		  			<figure>
+  							<img src="img/cs.png" height=100% width=100% data-alt="img/artwork-content-studio.gif">
+					</figure>
+					<li><p>Right click on the artwork and select “Open image in new tab.” Click and hold on the artwork image in that new window, drag your mouse and the image to anywhere on the Podcast Creator page. The image should then display in a new preview card</p> </li>
+		  			<figure>
+  							<img src="img/adding-art.png" height=100% width=100% data-alt="img/imagedrag.gif">
+					</figure>					
+		  		</ol>
+		  	</li>
+		  	<li><p>After the artwork has been added, the next step is adding all the podcast details. You need to enter the image’s Alt text, Podcast title, Podcast description, and URLs to any services that host the podcast audio. This is shown in the image below</p></li>
+		  			  			<figure>
+  							<img src="img/screen1.png" height=100% width=100%>
+					</figure>		
+		<li><p>Click the "Get Code and Notify McClatchy" button</p></li>			
+		<li><p>You should now have a page that looks like this, with a preview of the card and the code output:</p></li>
+		  			  			<figure>
+  							<img src="img/screen2.png" height=100% width=100%>
+					</figure>		
+        <li><p>Highlight all of the code, right click, and copy it </p></li>					
+		  			<figure>
+  							<img src="img/copying-code.png" height=75% width=75% data-alt="img/copying-code.gif">
+					</figure>	   
+			<li><p>Head over to the McClatchy DC Content Studio. In the file tree you will see "Podcasts", double or triple click that until it opens a new tab. There you will see Banner Options and one of the nested pages under Banner Options is "Podcasts." Double or triple click that until it opens. Now you will see the HTML for the Podcast landing page. I have left comments in the HTML labeled       <code>&lt;-- ****** MARKET PODCAST CARD ****** --&gt;</code> 	and   <code>&lt;-- ****** END MARKET PODCAST CARD ****** --&gt;</code>  After the last (there are only 3 at the time of writing this) <code>&lt;-- ****** END MARKET PODCAST CARD ****** --&gt;</code>  	paste the code you copied from the Card Creator. This is shown in the GIF below:	</p></li>     	 
+		  			<figure>
+  							<img src="img/pasting-cs.png" height=100% width=100% data-alt="img/pasting-cs.gif">
+					</figure>	   		
+			<li><p>Click "Publish" and you are done with part 1!</p></li>	 
+		  </ol>       
+<h5>Part 2: McClatchy DC iFrame for rest of markets</h5>
+     <ol>
+     	<li><p>In the top navigation, click "Secondary Podcast Card Creator"</p></li>
+     	<li><p>The next few steps will be the same as in Part 1, so I recommend using the same artwork image source as in Part 1, and drag and drop it to anywhere on the page just like detailed above</p></li>
+     	<li><p>Add all the podcast details just like in Part 1</p></li>
+     	<li><p>Click the "Get Code and Notify McClatchy" button</p></li>			
+     	<li><p>Highlight and copy all of the output code. The next step is where Part 2 varies from Part 1</p></li>
+     	<li><p>This process can vary depending on the FTP client you use, but for this document demo below, I am using Filezilla. The first step is to log in with McClatchy DC's FTP credentials</p>
+     		<ol  style="list-style-type: lower-alpha;">
+     			<li><p>On the right panel of Filezilla, navigate to mi00s/McClatchyDC/static/creatives/podcasts. Here you will see a file named "mcdc-podcast-iframe.html"</p></li>
+     			<li><p>Double click that file and it will download it to whatever folder on your computer that you have open in the left panel</p></li>
+		  			<figure>
+  							<img src="img/filezilla.png" height=100% width=100% data-alt="img/filezilla.gif">
+					</figure>	   	     			
+     			<li><p>Now, using Finder (Mac) or Explorer (Windows), navigate to where you downloaded the file. In my example below, I downloaded it to my Documents folder</p></li>
+     			<li><p>Right click it, and open it with your favorite text editor. I used Adobe Brackets, but I also recommend Notepad++ or Sublime Text</p></li>
+     			<li><p>In this HTML, you will see comments identifying the Beyond the Bubble, Majority Minority, and Out Here In America podcasts</p></li>
+     			<li><p>After Out Here in America, right after the comment that says <code>&lt;--  end out here in america  --&gt;</code>   , right click and paste your copied code from the Secondary Podcast Card Creator</p></li>
+     			<li><p>Save this file, and return to your open Filezilla window</p></li>
+		  			<figure>
+  							<img src="img/brackets.png" height=100% width=100% data-alt="img/brackets.gif">
+					</figure>	 
+    		<li><p>First, in the top left area of the Filezilla toolbar you will see a blue and a green arrow creating a sort of circle, this is the Refresh button. Click that to make sure it has the most recent save of the HTML file you just edited/saved</p></li>  	      
+    		<li><p>Now that it's refreshed, find your "mcdc-podcast-iframe.html" file in the left pane. Double click it. This will send it over Filezilla to the FTP server</p></li>		
+    		<li><p>Filezilla will warn you that this file already exists, the "overwrite" radio button should already be selected, so just click "Ok" to upload the file and overwrite the old one. Now you're done!</p></li>	
+		  			<figure>
+  							<img src="img/filezilla.png" height=100% width=100% data-alt="img/filezilla2.gif">
+					</figure>	   	       		
+     		</ol>
+     	</li>
+     </ol>          
+      </div>
+    </div>
+  </div>
+  
+</div>
+   
+     <div class="card">
+    <div class="card-header" role="tab" id="headingThree">
+      <h5 class="mb-0">
+        <a class="collapsed" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        Scenario 3: A podcast gets archived
+        </a>
+      </h5>
+    </div>
+    <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
+      <div class="card-body">   
+             <h4>Summary</h4>
+      <h5>Part 1: Removing the podcast from its market page</h5>
+       <ol>
+       	<li>User needs to navigate to the podcast free HTML page in the market's Content Studio</li>
+       	<li>User then identifies the <code>&lt;div&gt;</code> tag that the card is in, and delete all of it</li>
+       	<li>Publish changes</li>
+       </ol>
+       
+             <h5>Part 2: Moving the podcast to the Archive section</h5>
+       <ol>
+       	<li>If it is a McClatchy DC podcast:
+       	<ol style="list-style-type: lower-alpha;">
+       		<li>On McClatchy DC's FTP server, navigate to mi00s/McClatchyDC/static/creatives/podcasts/mcdc-podcast-iframe.html</li>
+       		<li>Identify the <code>&lt;div&gt;</code> tag that the podcast card is in, and delete it</li>
+       		<li>Use the Around/Archive Card Creator Tool to create the HTML for the podcast</li>
+       		<li>On McClatchy DC's FTP server, navigate to mi00s/McClatchyDC/static/creatives/podcasts/around-archive-podcast-iframe.html</li>
+       		<li>Towards the bottom of the HTML, you will see a section titled <code>   &lt;!---- 
+*******
+Archived Podcast Section 
+*******
+----&gt;</code></li>
+      	<li>Find the section for McClatchy DC</li>
+      	<li>Paste the <code>&lt;li&gt;</code> tag you copied from the card creator after the last <code>&lt;/li&gt;</code></li>
+      	<li>Save and re-upload the file to the FTP server</li>
+       	</ol>
+       	</li>
+     <li>If it is a podcast from any other market:
+       <ol style="list-style-type: lower-alpha;">
+       	<li>On McClatchy DC's FTP server, navigate to mi00s/McClatchyDC/static/creatives/podcasts/around-archive-podcast-iframe.html</li>
+       	<li>In the <code>&lt;!---- *****
+*********
+Around McClatchy Podcast Section
+*********
+*******----&gt;</code> find the region of the market your podcast is in</li>
+      <li>Here you will see one or more <code>&lt;li&gt;</code> tags that contain each podcast. Find the podcast that you are working with</li>
+      <li>Highlight the entire <code>&lt;li&gt;</code>  to <code>&lt;/li&gt;</code> and cut it</li>
+      	<li>Towards the bottom of the HTML, you will see a section titled <code>   &lt;!---- 
+*******
+Archived Podcast Section 
+*******
+----&gt;</code></li>
+      	<li>Find the section for region you are working with</li>
+      	<li>Paste the <code>&lt;li&gt;</code> tag you cut from above after the last <code>&lt;/li&gt;</code></li>
+      	<li>Save and re-upload the file to the FTP server</li>
+       </ol>
+       </li>  	
+
+       </ol>
+       
+     
+
+      </div>
+    </div>
+  </div>
+</div>
+    </div>
+    <!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script>
+        (function() {
+            'use strict'
+
+            if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+                var msViewportStyle = document.createElement('style')
+                msViewportStyle.appendChild(
+                    document.createTextNode(
+                        '@-ms-viewport{width:auto!important}'
+                    )
+                )
+                document.head.appendChild(msViewportStyle)
+            }
+
+        }())
+		
+		
+var getGif = function() {
+  var gif = [];
+  $('img').each(function() {
+    var data = $(this).data('alt');
+    gif.push(data);
+  });
+  return gif;
+}
+var gif = getGif();		
+		
+// Preload all the GIF.
+var image = [];
+ 
+$.each(gif, function(index) {
+  image[index]     = new Image();
+  image[index].src = gif[index];
+});		
+		
+		$('figure').on('click', function() {
+ 
+  var $this   = $(this),
+          $index  = $this.index(),
+           
+          $img    = $this.children('img'),
+          $imgSrc = $img.attr('src'),
+          $imgAlt = $img.attr('data-alt'),
+          $imgExt = $imgAlt.split('.');
+           
+  if($imgExt[1] === 'gif') {
+      $img.attr('src', $img.data('alt')).attr('data-alt', $imgSrc);
+  } else {
+      $img.attr('src', $imgAlt).attr('data-alt', $img.data('alt'));
+  }
+ 
+});
+
+		
+    </script>
+
+</body>
+</html>

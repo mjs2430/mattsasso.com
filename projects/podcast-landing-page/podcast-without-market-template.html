@@ -1,0 +1,81 @@
+<link rel="stylesheet" href="http://mcclatchy.com/static/creatives/podcasts/podcast-landing-pages.css"></link> 
+
+
+<style>
+	/*******
+Update the following color with market's color
+*******/
+.subscribe-section > a{
+  color: #0F5DA7;  /* MARKET ACCENT COLOR */
+	}
+
+	
+.mcdc-iframe{
+  display: block;
+  width: 100%;  
+  overflow: hidden; 
+  margin: 0px;
+  padding: 0px;
+  }
+	
+</style>
+
+
+<div class="main-wrapper container-fluid">
+ <div class="row">
+  <!---- 
+		******
+		Market Podcast Section 
+		*******
+	---->
+	
+  <!--- *** Update this with market name *** --->	
+ <!-- <div class="market col-xs-12">
+     <div class="section-heading">
+    Market Podcasts
+   </div> --->
+		
+<!--- ********** PASTE MARKET PODCAST FROM CARD CREATOR HERE  ************** --->
+
+
+	
+  </div><!---- End Market Podcast Section ---->
+
+
+  <!---- 
+		******
+		MCDC IFRAME SECTION
+		*******
+	---->
+		<script>
+window.addEventListener("message", e => {
+  let d = e.data;
+
+  if(d.sentinel == 'gofer' && d.type == 'resize') {
+    let f = document.querySelector(`iframe[src="${d.location}"]`);
+    if(f && f.style) {
+      f.style.height = `${d.height}px`;
+    }
+  }
+});
+</script>
+	
+<iframe name="Framename" src="http://media.mcclatchydc.com/static/creatives/podcasts/mcdc-podcast-iframe.html"  frameborder="0" scrolling="auto" class="mcdc-iframe">
+</iframe>	
+
+
+  <!---- 
+		******
+		Around Mcclatchy IFRAME SECTION
+		*******
+	---->
+<iframe name="Framename" src="http://media.mcclatchydc.com/static/creatives/podcasts/around-archive-podcast-iframe.html"  frameborder="0" scrolling="auto" class="mcdc-iframe">
+</iframe>	
+
+ </div>
+ <!--- End content after masthead --->
+
+
+</div>
+<!---- End container ---->
+ 

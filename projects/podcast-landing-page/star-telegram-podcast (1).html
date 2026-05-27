@@ -1,0 +1,108 @@
+<link rel="stylesheet" href="http://mcclatchy.com/static/creatives/podcasts/podcast-landing-pages.css"></link> 
+
+
+<style>
+	/*******
+Update the following color with market's color
+*******/
+.subscribe-section > a{
+  color: #5E6B7A;  /* MARKET ACCENT COLOR */
+	}
+
+	
+.mcdc-iframe{
+  display: block;
+  width: 100%;  
+  overflow: hidden; 
+  margin: 0px;
+  padding: 0px;
+  }
+	
+</style>
+
+
+<div class="main-wrapper container-fluid">
+ <div class="row">
+  <!---- 
+		******
+		Market Podcast Section 
+		*******
+	---->
+  <div class="market col-xs-12">
+      <!--- *** Update this with market name *** ---> <div class="section-heading">
+    Star-Telegram Podcasts
+   </div>
+		
+<!--- ****** MARKET PODCAST CARD ****** --->		
+<div class="card container-fluid row">         
+   <div class="thumb">
+	  <a href="javascript:void(0)"> <!--- Update this IMG SRC---><img class="img-responsive col-xs-12 col-sm-4" alt="out of the cold artwork" src="https://cdn.rawgit.com/mjs2430/mcclatchy/master/images/out-of-the-cold.jpg"></a>
+    </div>
+  <div class="info card-content col-xs-12">
+    <div class="podcast-title">
+		<a href="javascript:void(0)"><!--- Update This Title ---><p class="title">Out of the Cold</p></a>
+    </div>
+<!--- Subscribe links section --->	
+ <div class="subscribe-section">
+      <a class="apple" data-sub="apple" href="https://itunes.apple.com/us/podcast/out-of-the-cold/id1281761310?mt=2">
+        <img src="https://cdn.rawgit.com/mjs2430/mcclatchy/master/images/apple-logo.png" alt="apple logo"> Apple Podcasts
+      </a>
+      <a class="stitcher" data-sub="stitcher" href="https://www.stitcher.com/podcast/out-of-the-cold">
+        <img src="https://cdn.rawgit.com/mjs2430/mcclatchy/master/images/stitcher-logo.png" alt="stitcher logo"> Stitcher
+      </a>
+      <a class="google" data-sub="google" href="https://play.google.com/music/listen#/ps/Ifsmz4xwy2orkliwrmgx7f2va64">
+        <img src="https://cdn.rawgit.com/mjs2430/mcclatchy/master/images/google.png" alt="google play logo"> Google Play
+      </a>
+      <a class="libsyn" data-sub="libsyn" href="http://out-of-the-cold.libsyn.com/">
+        <img src="https://cdn.rawgit.com/mjs2430/mcclatchy/master/images/libsyn.png" alt="libsyn logo"> Libsyn
+      </a>      
+    </div><!--- End Subscribe links section --->
+    
+     <div class="podcast-description">
+    <!--- Update this text ---><p class="summary">In Fort Worth alone, there are upward of 900 unsolved cases - mostly murder mysteries - that date back to the 1950s. Some of the cases are eventually solved, but most just go cold. True crime reporter Deanna Boyd takes you deep into the most compelling cold cases in North Texas, which leave a victim's family searching for closure and suspects on the loose.</p>
+     </div>
+  </div>
+</div> <!--- ***** END MARKET PODCAST CARD ***** --->
+
+
+	
+  </div><!---- End Market Podcast Section ---->
+
+
+  <!---- 
+		******
+		MCDC IFRAME SECTION
+		*******
+	---->
+		<script>
+window.addEventListener("message", e => {
+  let d = e.data;
+
+  if(d.sentinel == 'gofer' && d.type == 'resize') {
+    let f = document.querySelector(`iframe[src="${d.location}"]`);
+    if(f && f.style) {
+      f.style.height = `${d.height}px`;
+    }
+  }
+});
+</script>
+	
+<iframe name="Framename" src="http://media.mcclatchydc.com/static/creatives/podcasts/mcdc-podcast-iframe.html"  frameborder="0" scrolling="auto" class="mcdc-iframe">
+</iframe>	
+
+
+  <!---- 
+		******
+		Around Mcclatchy IFRAME SECTION
+		*******
+	---->
+<iframe name="Framename" src="http://media.mcclatchydc.com/static/creatives/podcasts/around-archive-podcast-iframe.html"  frameborder="0" scrolling="auto" class="mcdc-iframe">
+</iframe>	
+
+ </div>
+ <!--- End content after masthead --->
+
+
+</div>
+<!---- End container ---->
+ 

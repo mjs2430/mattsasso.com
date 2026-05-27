@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>McClatchy Niche Template Customizer </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css'>
+ <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+ <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+  <!--Share window -->
+<div id="modal1" class="modal">
+ <div class="modal-content">
+   <div class="input-field">
+     <p>Save and share this custom URL</p>
+    <input type="text" name="shareURL" value="" id="share-input">
+   </div>
+ </div>
+ <div class="modal-footer">
+   <a href="#!" class="modal-action modal-close waves-effect waves-red btn-flat">Close</a>
+   <a href="#!" data-clipboard-target="#share-input" id="copy-code" class="modal-action waves-effect waves-green btn-flat">Copy URL</a>
+ </div>
+</div>
+
+<!--start url form -->
+<url-form>
+<!-- Header -->
+<div class="navbar-fixed">
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#!" class="brand-logo">Template Options</a>
+      <ul class="right hide-on-med-and-down">
+        <li>	 <a class="waves-effect waves-light btn modal-trigger save-share" href="#modal1">Save/Share</a>
+</li>
+      </ul>
+              <ul class="right hide-on-large-only">
+        <li>	 <a class="waves-effect waves-light btn modal-trigger save-share" href="#modal1"><i class="material-icons">save</i>
+</a>
+</li>
+      </ul>
+    </div>
+  </nav>
+</div>
+
+<div class="wrapper">
+<!-- Options Panel -->
+<div class="options-panel">
+<ul class="collapsible white" data-collapsible="accordion">
+ <!-- Market Info -->
+ <li>
+  <div class="collapsible-header">Market Info<span class="fa fa-chevron-down" aria-hidden="true"></span></div>
+  <div class="collapsible-body">
+   <section>
+    <div>
+     <div class="input-field">
+      <input type="text" name="Market" value="" id="market">
+      <label for="market">Market Name</label>
+     </div><br>
+     <div class="input-field">
+      <input type="text" name="Website" value="" id="website">
+      <label for="website">Website Name</label>
+     </div>
+    </div>
+   </section>
+
+  </div>
+ </li>
+ <!-- End Market Info -->
+
+ <!-- Logo -->
+ <li>
+  <div class="collapsible-header">Logo<span class="fa fa-chevron-down" aria-hidden="true"></span></div>
+  <div class="collapsible-body">
+   <section>
+    <p>Do you need the Design Team to create a logo? If no, please click "No" and provide your logo here.</p>
+    <p>
+     <input name="Logo Requested?" value="Yes" type="radio" id="logo-radio1"/>
+     <label for="logo-radio1">Yes</label>
+    </p>
+    <p>
+     <input name="Logo Requested?" value="No" type="radio" id="logo-radio2"/>
+     <label for="logo-radio2">No</label>
+    </p>
+   </section>
+   <!-- Upload Logo -->
+   <section id="upload-logo-section">
+    <div id="option-logo"><img id="option-logo-img" style="max-width:150px;padding: 10px;" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"></div>
+    <div class="input-field logo-text-field">
+     <input type="text" name="Logo" value="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" id="logo-img-url">
+     <label for="logo-img-url">Logo URL</label>
+   </div>
+   <p>If you have an image on your computer that you need to upload, please <a href="https://ctrlq.org/images/" target="_blank">go here</a> and click "Upload Picture", then copy/paste the direct link back into this form.</p>
+   </section>
+
+  </div>
+ </li>
+ <!-- End Logo -->
+
+ <!-- Color Palette -->
+ <li>
+  <div class="collapsible-header">Color Palette<span class="fa fa-chevron-down" aria-hidden="true"></span></div>
+  <div class="collapsible-body">
+   <section>
+    <p>Do you need the Design Team to create a color palette? If no, please click "No" and provide your colors here.</p>
+    <p>
+     <input name="Color palette requested?" value="Yes" type="radio" id="color-radio1"/>
+     <label for="color-radio1">Yes</label>
+    </p>
+    <p>
+     <input name="Color palette requested?" value="No" type="radio" id="color-radio2"/>
+     <label for="color-radio2">No</label>
+    </p>
+   </section>
+   <section id="color-palette">
+    <div class="input-field">
+     <i class="material-icons prefix ">brightness_1</i>
+     <input name="Dropdown Nav Hex" class="color-input" id="dropdown-nav-hex" type="text" value="#00AAB5">
+     <label for="dropdown-nav-hex">Dropdown Nav Color</label>
+    </div>
+    <div class="input-field">
+     <i class="material-icons prefix ">brightness_1</i>
+     <input name="Dropdown Nav Hover Hex" class="color-input" id="dropdown-nav-hover-hex" type="text" value="#008890">
+     <label for="dropdown-nav-hover-hex">Dropdown Nav Hover Color</label>
+    </div>
+    <div class="input-field">
+     <i class="material-icons prefix miami-pink" id='dropdown-nav-color'>brightness_1</i>
+     <input name="Static Nav Hex" class="color-input" id="static-nav-hex" type="text" value="#FF008E">
+     <label for="static-nav-hex">Static Nav Color</label>
+    </div>
+    <div class="input-field">
+     <i class="material-icons prefix miami-pink-hover">brightness_1</i>
+     <input name="Static Nav Hover Hex" class="color-input" id="static-nav-hover-hex" type="text" value="#cc0071">
+     <label for="static-nav-hover-hex">Static Nav Hover Color</label>
+    </div>
+    <div class="input-field">
+     <i class="material-icons prefix miami-pink-hover">brightness_1</i>
+     <input name="Highlight Hex" class="color-input" id="highlight-color-hex" type="text" value="#cc0071">
+     <label for="accent-color-hex">Highlight Color</label>
+    </div>
+   </section>
+  </div>
+ </li>
+ <!-- End color palette-->
+
+ <!-- Badges -->
+ <li>
+  <div class="collapsible-header">Badges<span class="fa fa-chevron-down" aria-hidden="true"></span></div>
+  <div class="collapsible-body">
+   <section>
+    <p style="font-size:20px;">Provide 3-6 Badges names</p>
+    <p class="red-text" style="margin-bottom:10px;">Note: text alignment might not show up correctly in this preview, but will in final production.</p>
+    <!--Badges -->
+    <div class="input-field badge-names">
+     <input type="text" name="badge-1" id="badge-name-1">
+     <label for="badge-name-1">Badge 1</label>
+    </div>
+    <div class="input-field">
+     <input type="text" name="badge-2" id="badge-name-2">
+     <label for="badge-name-2">Badge 2</label>
+    </div>
+    <div class="input-field">
+     <input type="text" name="badge-3" id="badge-name-3">
+     <label for="badge-name-3">Badge 3</label>
+    </div>
+    <div class="input-field">
+     <input type="text" name="badge-4" id="badge-name-4">
+     <label for="badge-name-4">Badge 4</label>
+    </div>
+    <div class="input-field">
+     <input type="text" name="badge-5" id="badge-name-5">
+     <label for="badge-name-5">Badge 5</label>
+    </div>
+    <div class="input-field">
+     <input type="text" name="badge-6" id="badge-name-6">
+     <label for="badge-name-6">Badge 6</label>
+    </div> <br>
+    <div class="input-field badge-field">
+     <i class="material-icons prefix miami-green-hover">brightness_1</i>
+     <input name="Badge Color Hex" class="color-input" id="badge-color-hex" type="text" value="#00797a">
+     <label for="badge-color-hex">Badge Color</label>
+    </div>
+   </section>
+  </div>
+ </li>
+ <!-- End badges -->
+
+ <!-- Fonts -->
+ <li>
+  <div class="collapsible-header">Headline Fonts<span class="fa fa-chevron-down" aria-hidden="true"></span></div>
+  <div class="collapsible-body">
+   <section class="font-weights-section">
+    <p>Please choose a font case for your headlines</p>
+    <p>
+     <input name="Font Case" value="UPPERCASE" type="radio" id="uppercase-radio"/>
+     <label  style="font-family:'McClatchy Sans',Helvetica-Neue;font-weight:500;color:#333;" for="uppercase-radio">UPPERCASE</label>
+    </p>
+    <p>
+     <input name="Font Case" value="Sentence" type="radio" id="sentence-radio" />
+     <label  style="font-family:'McClatchy Sans',Helvetica-Neue;font-weight:500;color:#333;" for="sentence-radio">Sentence</label>
+    </p>
+    <p>Please choose a weight for your headlines</p>
+     <p>
+     <input name="Font Weight" value="McClatchy Sans Light" type="radio" id="light-radio"/>
+     <label  style="font-family:'McClatchy Sans',Helvetica-Neue;font-weight:300;color:#333;" for="light-radio">McClatchy Sans Light</label>
+    </p>
+    <p>
+     <input name="Font Weight" value="McClatchy Sans Demi" type="radio" id="demi-radio" />
+     <label  style="font-family:'McClatchy Sans',Helvetica-Neue;font-weight:600;color:#333;" for="demi-radio">McClatchy Sans Demi</label>
+    </p>
+   </section>
+  </div>
+ </li>
+ <!-- End Fonts -->
+
+ <!-- Extras -->
+ <li>
+  <div class="collapsible-header">Extras<span class="fa fa-chevron-down" aria-hidden="true"></span></div>
+  <div class="collapsible-body">
+   <section>
+    <p>Do you need a newsletter?</p>
+    <p>
+     <input name="newsletter" value="Yes" type="radio" id="newsletter-yes" />
+     <label for="newsletter-yes">Yes</label>
+    </p>
+    <p>
+     <input name="newsletter" value="No" type="radio" id="newsletter-no" />
+     <label for="newsletter-no">No</label>
+    </p>
+    <div class="input-field" style="margin-top:35px;">
+     <textarea name="Other plugins" class="materialize-textarea"></textarea>
+     <label for="icon_prefix2" style="color: #424242;">Other requested plugins</label>
+    </div>
+   </section>
+   <!-- not needed </form>   -->
+  </div>
+ </li>
+ <!-- End Extras -->
+</ul>
+</div>
+<!--End options panel -->
+
+
+<!-- **********
+Live View
+**************-->
+
+<div class="live-view">
+<header> <img id="logo-live" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"> </header>
+<div class="nav">
+ <div class="dropdown"><span>test<span class="fa fa-chevron-down" aria-hidden="true"></span></span>
+ </div>
+ <div class="dropdown"><span>test<span class="fa fa-chevron-down" aria-hidden="true"></span></span>
+ </div>
+ <div class="dropdown"><span>test<span class="fa fa-chevron-down" aria-hidden="true"></span></span>
+ </div>
+ <div class="static"><span>test</span></div>
+ <div class="static"><span>test</span></div>
+</div>
+<section class="content">
+ <p>
+  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <a href="#">this is the highlight color</a> quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+ </p>
+ <!-- Badges -->
+ <div class="svg-container">
+  <svg id="badge-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 131.8 131.8"><defs><clipPath id="a" transform="translate(-7.1 -6.4)"><rect x="4.3" y="6.4" width="137.3" height="131.77" transform="translate(-0.3 0.3) rotate(-0.2)" style="fill:none"/></clipPath></defs><title>badge_new</title><g style="clip-path:url(#a)"><path class="badge badge-1" d="M94.7,134.5A65.9,65.9,0,1,0,10.8,93.9a65.9,65.9,0,0,0,83.9,40.5" transform="translate(-7.1 -6.4)" style="fill:#00797a"/><path class="badge badge-1" d="M92,125.5A57,57,0,1,0,19.4,90.4,57,57,0,0,0,92,125.5" transform="translate(-7.1 -6.4)" style="fill:#00797a"/><path class="badge badge-1" d="M92,125.5A57,57,0,1,0,19.4,90.4,57,57,0,0,0,92,125.5" transform="translate(-7.1 -6.4)" style="fill:#00797a"/><circle cx="73.3" cy="71.6" r="57" transform="translate(-26.6 21.7) rotate(-19.2)" style="fill:none;stroke:#fff;stroke-width:5.43200016021729px"/><path d="M7.1,77.9A65.1,65.1,0,0,0,18,108.7L138.9,66.8A65.1,65.1,0,0,0,128.1,36Z" transform="translate(-7.1 -6.4)" style="fill:#fff"/></g><text class="badge badge-1" id="badge-1-text" transform="matrix(0.94, -0.33, 0.33, 0.94, 32.68, 90.56)" style="font-size:31.450000762939453px;fill:#00797a;font-family:McClatchySansCond-Bold, McClatchy Sans Cond;font-weight:700;letter-spacing:-0.01497627549464008em"></text></svg>
+
+  <svg id="badge-2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 131.8 131.8"><defs><clipPath id="a" transform="translate(-7.1 -6.4)"><rect x="4.3" y="6.4" width="137.3" height="131.77" transform="translate(-0.3 0.3) rotate(-0.2)" style="fill:none"/></clipPath></defs><title>badge_new</title><g style="clip-path:url(#a)"><path class="badge badge-2" d="M94.7,134.5A65.9,65.9,0,1,0,10.8,93.9a65.9,65.9,0,0,0,83.9,40.5" transform="translate(-7.1 -6.4)" style="fill:#00797a"/><path class="badge badge-2" d="M92,125.5A57,57,0,1,0,19.4,90.4,57,57,0,0,0,92,125.5" transform="translate(-7.1 -6.4)" style="fill:#00797a"/><path class="badge badge-2" d="M92,125.5A57,57,0,1,0,19.4,90.4,57,57,0,0,0,92,125.5" transform="translate(-7.1 -6.4)" style="fill:#00797a"/><circle cx="73.3" cy="71.6" r="57" transform="translate(-26.6 21.7) rotate(-19.2)" style="fill:none;stroke:#fff;stroke-width:5.43200016021729px"/><path d="M7.1,77.9A65.1,65.1,0,0,0,18,108.7L138.9,66.8A65.1,65.1,0,0,0,128.1,36Z" transform="translate(-7.1 -6.4)" style="fill:#fff"/></g><text class="badge badge-2" id="badge-2-text" transform="matrix(0.94, -0.33, 0.33, 0.94, 32.68, 90.56)" style="font-size:31.450000762939453px;fill:#00797a;font-family:McClatchySansCond-Bold, McClatchy Sans Cond;font-weight:700;letter-spacing:-0.01497627549464008em"></text></svg>
+
+  <svg id="badge-3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 131.8 131.8"><defs><clipPath id="a" transform="translate(-7.1 -6.4)"><rect x="4.3" y="6.4" width="137.3" height="131.77" transform="translate(-0.3 0.3) rotate(-0.2)" style="fill:none"/></clipPath></defs><title>badge_new</title><g style="clip-path:url(#a)"><path class="badge badge-3" d="M94.7,134.5A65.9,65.9,0,1,0,10.8,93.9a65.9,65.9,0,0,0,83.9,40.5" transform="translate(-7.1 -6.4)" style="fill:#00797a"/><path class="badge badge-3" d="M92,125.5A57,57,0,1,0,19.4,90.4,57,57,0,0,0,92,125.5" transform="translate(-7.1 -6.4)" style="fill:#00797a"/><path class="badge badge-3" d="M92,125.5A57,57,0,1,0,19.4,90.4,57,57,0,0,0,92,125.5" transform="translate(-7.1 -6.4)" style="fill:#00797a"/><circle cx="73.3" cy="71.6" r="57" transform="translate(-26.6 21.7) rotate(-19.2)" style="fill:none;stroke:#fff;stroke-width:5.43200016021729px"/><path d="M7.1,77.9A65.1,65.1,0,0,0,18,108.7L138.9,66.8A65.1,65.1,0,0,0,128.1,36Z" transform="translate(-7.1 -6.4)" style="fill:#fff"/></g><text class="badge badge-3" id="badge-3-text" transform="matrix(0.94, -0.33, 0.33, 0.94, 32.68, 90.56)" style="font-size:31.450000762939453px;fill:#00797a;font-family:McClatchySansCond-Bold, McClatchy Sans Cond;font-weight:700;letter-spacing:-0.01497627549464008em"></text></svg>
+
+
+  <svg id="badge-4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 131.8 131.8"><defs><clipPath id="a" transform="translate(-7.1 -6.4)"><rect x="4.3" y="6.4" width="137.3" height="131.77" transform="translate(-0.3 0.3) rotate(-0.2)" style="fill:none"/></clipPath></defs><title>badge_new</title><g style="clip-path:url(#a)"><path class="badge badge-4" d="M94.7,134.5A65.9,65.9,0,1,0,10.8,93.9a65.9,65.9,0,0,0,83.9,40.5" transform="translate(-7.1 -6.4)" style="fill:#00797a"/><path class="badge badge-4" d="M92,125.5A57,57,0,1,0,19.4,90.4,57,57,0,0,0,92,125.5" transform="translate(-7.1 -6.4)" style="fill:#00797a"/><path class="badge badge-4" d="M92,125.5A57,57,0,1,0,19.4,90.4,57,57,0,0,0,92,125.5" transform="translate(-7.1 -6.4)" style="fill:#00797a"/><circle cx="73.3" cy="71.6" r="57" transform="translate(-26.6 21.7) rotate(-19.2)" style="fill:none;stroke:#fff;stroke-width:5.43200016021729px"/><path d="M7.1,77.9A65.1,65.1,0,0,0,18,108.7L138.9,66.8A65.1,65.1,0,0,0,128.1,36Z" transform="translate(-7.1 -6.4)" style="fill:#fff"/></g><text class="badge badge-4" id="badge-4-text" transform="matrix(0.94, -0.33, 0.33, 0.94, 32.68, 90.56)" style="font-size:31.450000762939453px;fill:#00797a;font-family:McClatchySansCond-Bold, McClatchy Sans Cond;font-weight:700;letter-spacing:-0.01497627549464008em"></text></svg>
+
+  <svg id="badge-5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 131.8 131.8"><defs><clipPath id="a" transform="translate(-7.1 -6.4)"><rect x="4.3" y="6.4" width="137.3" height="131.77" transform="translate(-0.3 0.3) rotate(-0.2)" style="fill:none"/></clipPath></defs><title>badge_new</title><g style="clip-path:url(#a)"><path class="badge badge-5" d="M94.7,134.5A65.9,65.9,0,1,0,10.8,93.9a65.9,65.9,0,0,0,83.9,40.5" transform="translate(-7.1 -6.4)" style="fill:#00797a"/><path class="badge badge-5" d="M92,125.5A57,57,0,1,0,19.4,90.4,57,57,0,0,0,92,125.5" transform="translate(-7.1 -6.4)" style="fill:#00797a"/><path class="badge badge-5" d="M92,125.5A57,57,0,1,0,19.4,90.4,57,57,0,0,0,92,125.5" transform="translate(-7.1 -6.4)" style="fill:#00797a"/><circle cx="73.3" cy="71.6" r="57" transform="translate(-26.6 21.7) rotate(-19.2)" style="fill:none;stroke:#fff;stroke-width:5.43200016021729px"/><path d="M7.1,77.9A65.1,65.1,0,0,0,18,108.7L138.9,66.8A65.1,65.1,0,0,0,128.1,36Z" transform="translate(-7.1 -6.4)" style="fill:#fff"/></g><text class="badge badge-5" id="badge-5-text" transform="matrix(0.94, -0.33, 0.33, 0.94, 32.68, 90.56)" style="font-size:31.450000762939453px;fill:#00797a;font-family:McClatchySansCond-Bold, McClatchy Sans Cond;font-weight:700;letter-spacing:-0.01497627549464008em"></text></svg>
+
+  <svg id="badge-6" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 131.8 131.8"><defs><clipPath id="a" transform="translate(-7.1 -6.4)"><rect x="4.3" y="6.4" width="137.3" height="131.77" transform="translate(-0.3 0.3) rotate(-0.2)" style="fill:none"/></clipPath></defs><title>badge_new</title><g style="clip-path:url(#a)"><path class="badge badge-6" d="M94.7,134.5A65.9,65.9,0,1,0,10.8,93.9a65.9,65.9,0,0,0,83.9,40.5" transform="translate(-7.1 -6.4)" style="fill:#00797a"/><path class="badge badge-6" d="M92,125.5A57,57,0,1,0,19.4,90.4,57,57,0,0,0,92,125.5" transform="translate(-7.1 -6.4)" style="fill:#00797a"/><path class="badge badge-6" d="M92,125.5A57,57,0,1,0,19.4,90.4,57,57,0,0,0,92,125.5" transform="translate(-7.1 -6.4)" style="fill:#00797a"/><circle cx="73.3" cy="71.6" r="57" transform="translate(-26.6 21.7) rotate(-19.2)" style="fill:none;stroke:#fff;stroke-width:5.43200016021729px"/><path d="M7.1,77.9A65.1,65.1,0,0,0,18,108.7L138.9,66.8A65.1,65.1,0,0,0,128.1,36Z" transform="translate(-7.1 -6.4)" style="fill:#fff"/></g><text class="badge badge-6" id="badge-6-text" transform="matrix(0.94, -0.33, 0.33, 0.94, 32.68, 90.56)" style="font-size:31.450000762939453px;fill:#00797a;font-family:McClatchySansCond-Bold, McClatchy Sans Cond;font-weight:700;letter-spacing:-0.01497627549464008em"></text></svg>
+ </div>
+ <!-- End Badges -->
+ <!-- Headlines -->
+ <div class="headline-card">
+  <img class="responsive-img" src="http://www.miami.com/wp-content/uploads/sites/2/2017/07/anderson1-300x188.jpg" class="featured-image" alt="">
+  <h3 class="headline">This is a sample headline, you can change the font weight and font case</h3>
+ </div>
+
+</section>
+<!-- End content -->
+
+
+</div>
+<!-- End live view -->
+</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js'></script>
+<script src='https://use.fontawesome.com/44d2a565fe.js'></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js"></script>
+
+  <script src="js/url-form.js"></script>
+  <script src="js/index.js"></script>
+
+  </url-form>
+</body>
+</html>

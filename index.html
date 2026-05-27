@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Global site fatag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-12577414-9"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-12577414-9');
+    </script>
+
+    <meta charset="utf-8">
+    <title>Matt Sasso's Product and Development Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Matt Sasso">
+    <meta name="designer" content="Matt Sasso">
+    <meta name="description" content="Matt sasso is a product designer and web developer available for freelance work.">
+    <meta name="keywords" content="product design, web design, web development, graphic design, wordpress, html, css, javascript, consulting, freelance, matthew sasso, matt sasso, developer, designer, product, apps, app">
+    <script data-search-pseudo-elements defer src="https://use.fontawesome.com/44d2a565fe.js" integrity="sha384-L469/ELG4Bg9sDQbl0hvjMq8pOcqFgkSpwhwnslzvVVGpDjYJ6wJJyYjvG3u8XW7" crossorigin="anonymous"></script>
+    <meta property="og:title" content="Matt Sasso's Web Development and Design Portfolio">
+    <meta property="og:description" content="Matt sasso is a product designer and web developer available for freelance work.">
+    <meta property="og:image" content="http://mattsasso.com/img/social.png">
+    <meta property="og:url" content="http://mattsasso.com/index.html">
+    <meta name="twitter:card" content="http://matthsasso.com/img/social.png">
+    <link rel="icon" type="image/png" href="/img/favicon32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/img/favicon16.png" sizes="16x16">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600|Roboto:300,500" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+
+    <main-header></main-header>
+
+    <main>
+        <div class="title-card">
+            <div class="card">
+                <h1>my work</h1>
+                <p>I am a Sr. Product Lead at <a href="https://willowtreeapps.com" target="_blank">WillowTree Apps</a> and formerly a Product Designer/Product Manager and freelance front-end developer.  I use design thinking to create systems, products, and content from a user-first mentality.</p>            </div>
+            <div class="white-space"></div>
+        </div>
+
+        <div class="filters">
+            <div>
+                <h6>Filters:</h6>
+                <button class="filter-button unfiltered ">mcclatchy</button>
+                <button class="filter-button unfiltered">freelance</button>
+                <button class="filter-button unfiltered">wordpress</button>
+                <button class="filter-button unfiltered">design</button>
+                <button class="filter-button unfiltered">webdev</button>
+                <button class="filter-button unfiltered">apps</button>
+                <button id="loadMore">... show more</button>
+                <button id="loadLess" style="display: none;">... show fewer</button>
+            </div>
+        </div>
+
+        <section class="content">
+
+            <work-card src="img/thumbnails/mcclatchy-design-system.png" alt="mcclatchy design system artwork" href="projects/mcclatchy-design-system.html" class="design mcclatchy webdev" title="mcclatchy design system" data-summary="I'm currently taking our DSP style guide that I previously worked on and merging it within our Saratoga Design System."></work-card>
+
+            <work-card src="img/thumbnails/berco-construction.png" href="projects/berco-construction.html" alt="enhanced renovations artwork" class="freelance design webdev" title="berco construction llc" data-summary="I designed and developed a custom Wordpress site for this client's high-end, custom carpentry business."></work-card>
+
+            <work-card src="img/thumbnails/coming-soon.gif" alt="coming soon animated gif" class="coming-soon design mcclatchy" title="member center" data-summary="Working across teams to create a new member center for our users. We are shifting the focus of our member center from purely a simple account management portal to a more useful, purposeful center that focuses on retention." disabled="true"></work-card>
+
+            <work-card src="img/thumbnails/enhanced-renovations.png" alt="enhanced renovations artwork" href="projects/enhanced-renovations.html" class="freelance webdev design" title="enhanced renovations" data-summary="I created a new logo and designed and developed a custom Wordpress site for a repeat client's general contracting business."></work-card>
+
+            <work-card src="img/thumbnails/coming-soon.gif" alt="coming soon animated gif" class="coming-soon design mcclatchy" title="purchase flow" data-summary="Currently in QA testing, a refresh of our purchase flow to use the new design language is the first step in a larger overhaul of our purchase flow." disabled="true"></work-card>
+
+            <work-card src="img/thumbnails/mcclatchy-paywalls.png" href="projects/mcclatchy-paywalls.html" alt="mcclatchy paywall artwork" class="mcclatchy design webdev" title="mcclatchy paywalls" data-summary="My responsibilities included UX research and planning, wireframes, hi-fidelity mocks, prototyping (functional mocks and functional code examples) and development handoff."></work-card>
+
+            <work-card src="img/thumbnails/homekeeper-01.png" href="projects/homekeeper.html" alt="homekeeper app artwork" class="freelance apps design" title="homekeeper app" data-summary="I worked with stakeholders to outline the requirements for this app from a user-first perspective, created user flows, designed the UI and app icons."></work-card>
+
+            <work-card src="img/thumbnails/coastal-docs-02.png" href="projects/coastal-docs.html" alt="coastal docs artwork" class="freelance webdev design wordpress" title="coastal docs llc" data-summary="I designed and developed a custom Wordpress site for a power washing business in the Triangle area."></work-card>
+
+            <work-card src="img/thumbnails/edge-of-aging-03.png" href="projects/edge-of-aging.html" alt="edge of aging artwork" class="freelance webdev design wordpress" title="edge of aging" data-summary="Edge of Aging is a custom Wordpress site I developed for a company starting a consulting business with a supplemental podcast."></work-card>
+
+            <work-card src="img/thumbnails/wicked-sweet-90s-04.png" href="projects/wicked-sweet-90s.html" alt="wicked sweet 90s artwork" class="freelance webdev design wordpress" title="wicked sweet 90s" data-summary="Wicked Sweet 90s is one of many decade-focused pop culture blogs a client of mine has created. I developed and designed a custom Wordpress site for them, as well as the logo."></work-card>
+
+            <work-card src="img/thumbnails/mcclatchy-subscription-offers.png" href="projects/mcclatchy-subscription-offers.html" alt="mcclatchy subscription offers page artwork" class="mcclatchy webdev design" title="subscription offer pages" data-summary="My responsibilities included UX research and planning, wireframes, hi-fidelity mocks, prototyping (functional mocks and functional code examples) and development handoff."></work-card>
+
+            <work-card src="img/thumbnails/long-live-70s-01.png" href="projects/long-live-70s.html" alt="long live the 70s artwork" class="freelance webdev design wordpress" title="long live the 70s" data-summary="Long Live the 70s is one of many decade-focused pop culture blogs a client of mine has created. I developed and designed a custom Wordpress site for them, as well as the logo."></work-card>
+
+            <work-card src="img/thumbnails/template-customizer-05.png" href="projects/template-customizer.html" alt="template customizer artwork" class="mcclatchy webdev" title="template customizer" data-summary="I created a tool for McClatchy markets to customize settings and styles for their niche website templates, save them, and share them with our design team."></work-card>
+
+            <work-card src="img/thumbnails/podcast-creator.png" href="projects/podcast-landing-page.html" alt="podcast creator artwork" class="mcclatchy webdev design" title="podcast creator" data-summary="I designed and developed podcast pages for all of our McClatchy markets. I also created a tool and documentation to help future users add new podcasts."></work-card>
+
+            <work-card src="img/thumbnails/city-place-01.png" href="projects/city-place-daily.html" alt="city place daily artwork" class="freelance webdev design wordpress" title="cityplace daily" data-summary="Currently working on a hyper-local news blog in Wordpress. I've created the logo as well."></work-card>
+
+        </section>
+
+
+        <p class="totop">
+            <a href="#top" aria-label="scroll to top"></a>
+        </p>
+
+    </main>
+
+    <main-footer></main-footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/javascript.js"></script>
+
+</body></html>

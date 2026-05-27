@@ -1,0 +1,174 @@
+body {
+  margin: 0;
+  font: 16px/1.5 "mcclatchy-sans", sans-serif;
+
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+section{
+  max-width: 900px;
+  margin: 1rem auto;
+  padding: 0 1rem;
+}
+
+h1 {
+  font-size: 1.5em;
+  font-weight: normal;
+}
+
+label {
+  display: block;
+  font-size: .9em;
+  font-weight: bold;
+  font-family: "mcclatchy-sans-cond", sans-serif;
+}
+
+textarea, input {
+  display: block;
+  font-size: 1.1rem;
+  padding: 5px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.hid {
+	display: none!important;
+}
+
+#preview {
+  max-width: 900px;
+}
+
+.row {
+	margin-left: 0;
+	padding-left: 0;
+}
+
+.card {
+  background-color: #eee;
+  height: 224px;
+  display: flex;
+		border: none;
+	border-radius: 0;
+	flex-direction: row;
+	margin: 30px 0;
+}
+
+.thumb {
+  position: relative;
+  width: 224px;
+}
+
+.thumb img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-placement: 50% 20%;
+		padding: 0;
+	max-width: 100%;
+}
+
+.info {
+  padding: 15px 25px 10px 25px;
+  box-sizing: border-box;
+  flex: 1;
+}
+
+.title {
+  font-size: 22px;
+  color: #333333;
+  font-weight: 400;
+  margin: 0 0 25px 0;
+}
+
+.summary {
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "mcclatchy sans", sans-serif;
+  max-width: 640px;
+margin-top: 15px;
+}
+
+.market .card .subscribe-section {
+  border-bottom: 1px solid #9b9b9b;
+  padding-bottom: 10px;
+margin: 0px -5px 0 -5px;
+
+}
+.market .card .subscribe-section .source {
+  height: 50px;
+  width: 30%;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  padding: 0;
+}
+.market .card .subscribe-section .source:last-of-type {
+  border-right: none;
+}
+.market .card .subscribe-section .source .subscribe-link {
+  margin: 0;
+}
+
+.market .card .subscribe-section .apple img {
+  width: 22px;
+}
+
+.market .card .subscribe-section .soundcloud img {
+  width: 39px;
+}
+
+.market .card .subscribe-section .stitcher img {
+  width: 34px;
+}
+
+.market .card .subscribe-section .google img {
+  width: 23px;
+}
+
+
+.subscribe-section {
+  display: flex;
+}
+
+.subscribe-section > a {
+  display: flex;
+  align-items: center;
+ justify-content: flex-end;
+	flex-direction: column;
+	text-align: center;
+  color: #b20009;
+  font-size: 12px;
+  text-decoration: none;
+  padding: 0 5px;
+  border-left: 1px solid #cdcdcd;
+}
+
+.subscribe-section > a:first-child {
+  border-left: none;
+  padding-left: 0;
+}
+
+.subscribe-section img {
+  width: 22px;
+  margin-right: 5px;
+	margin-bottom: 5px;
+}
+pre {
+  font-size: 13px;
+  background-color: #37474f;
+  padding: 1rem;
+	color: #fff;
+  box-sizing: border-box;
+max-width: 900px;
+	overflow-x: scroll;
+	display: none;
+}

@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;600;800&display=swap');
+
+body {
+    background: url(andrew.png);
+}
+.container {
+    padding: 50px;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 8rem;
+}
+
+.purple {
+    text-shadow: 5px 5px purple, 15px 15px orange, 25px 25px #fff444;   
+}
+
+.yellow {
+       text-shadow: 5px 5px #fff444, 15px 15px purple, 25px 25px orange;
+}
+
+.orange {
+       text-shadow: 5px 5px orange, 15px 15px #fff444, 25px 25px purple;
+}
+
+button {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 3rem;
+    text-transform: uppercase;
+    background: #fff444;
+    letter-spacing: .6rem;
+    line-height: 5rem;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 20px 20px orange;
+}
+
+#btn2 {
+    background: orange;
+    box-shadow: 20px 20px #fff444;
+}
+
+#btn3 {
+    background: #ffc04d;
+    box-shadow: 20px 20px orangered; 
+}
+
+button:active {
+    background: purple;
+    color: white;
+}

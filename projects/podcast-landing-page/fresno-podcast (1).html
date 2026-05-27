@@ -1,0 +1,108 @@
+<link rel="stylesheet" href="http://mcclatchy.com/static/creatives/podcasts/podcast-landing-pages.css"></link> 
+
+
+<style>
+	/*******
+Update the following color with market's color
+*******/
+.subscribe-section > a{
+  color: #4C699A;  /* MARKET ACCENT COLOR */
+	}
+
+	
+.mcdc-iframe{
+  display: block;
+  width: 100%;  
+  overflow: hidden; 
+  margin: 0px;
+  padding: 0px;
+  }
+	
+</style>
+
+
+<div class="main-wrapper container-fluid">
+ <div class="row">
+  <!---- 
+		******
+		Market Podcast Section 
+		*******
+	---->
+  <div class="market col-xs-12">
+      <!--- *** Update this with market name *** ---> <div class="section-heading">
+   The Fresno Bee Podcasts
+   </div>
+		
+<!--- ****** MARKET PODCAST CARD ****** --->		
+<div class="card container-fluid row">         
+   <div class="thumb">
+	  <a href="javascript:void(0)"> <!--- Update this IMG SRC---><img class="img-responsive col-xs-12 col-sm-4" alt="fresno beehive artwork" src="https://github.com/mjs2430/mcclatchy/blob/master/images/fresno.png?raw=true"></a>
+    </div>
+  <div class="info card-content col-xs-12">
+    <div class="podcast-title">
+		<a href="javascript:void(0)"><!--- Update This Title ---><p class="title">The Fresno Beehive</p></a>
+    </div>
+<!--- Subscribe links section --->	
+ <div class="subscribe-section">
+      <a class="apple" data-sub="apple" href="https://itunes.apple.com/us/podcast/the-beehive-podcast/id1206658243?mt=2">
+        <img src="https://cdn.rawgit.com/mjs2430/mcclatchy/master/images/apple-logo.png" alt="apple logo"> Apple Podcasts
+      </a>
+      <a class="soundcloud" data-sub="soundcloud" href="https://soundcloud.com/beehivepodcast/track">
+        <img src="https://cdn.rawgit.com/mjs2430/mcclatchy/master/images/soundcloud-logo.png" alt="soundcloud logo"> Soundcloud
+      </a>
+      <a class="stitcher" data-sub="stitcher" href="https://www.stitcher.com/podcast/fresno-beehive-2/fresno-beehive-podcast?refid=stpr">
+        <img src="https://cdn.rawgit.com/mjs2430/mcclatchy/master/images/stitcher-logo.png" alt="stitcher logo"> Stitcher
+      </a>
+      <a class="google" data-sub="google" href="https://play.google.com/music/listen#/ps/Iqbtznmuafefxiinlbeqjdbj5rq">
+        <img src="https://cdn.rawgit.com/mjs2430/mcclatchy/master/images/google.png" alt="google play logo"> Google Play
+      </a>
+    </div><!--- End Subscribe links section --->
+    
+     <div class="podcast-description">
+    <!--- Update this text ---><p class="summary">Kathy Mahan, Rory Appleton and Joshua Tehee are pop - culture fans, if not fanatics. Each week, they sit down to chat about the best in pop culture, entertainment, food and more.</p>
+     </div>
+  </div>
+</div> <!--- ***** END MARKET PODCAST CARD ***** --->
+
+
+	
+  </div><!---- End Market Podcast Section ---->
+
+
+  <!---- 
+		******
+		MCDC IFRAME SECTION
+		*******
+	---->
+		<script>
+window.addEventListener("message", e => {
+  let d = e.data;
+
+  if(d.sentinel == 'gofer' && d.type == 'resize') {
+    let f = document.querySelector(`iframe[src="${d.location}"]`);
+    if(f && f.style) {
+      f.style.height = `${d.height}px`;
+    }
+  }
+});
+</script>
+	
+<iframe name="Framename" src="http://media.mcclatchydc.com/static/creatives/podcasts/mcdc-podcast-iframe.html"  frameborder="0" scrolling="auto" class="mcdc-iframe">
+</iframe>	
+
+
+  <!---- 
+		******
+		Around Mcclatchy IFRAME SECTION
+		*******
+	---->
+<iframe name="Framename" src="http://media.mcclatchydc.com/static/creatives/podcasts/around-archive-podcast-iframe.html"  frameborder="0" scrolling="auto" class="mcdc-iframe">
+</iframe>	
+
+ </div>
+ <!--- End content after masthead --->
+
+
+</div>
+<!---- End container ---->
+ 

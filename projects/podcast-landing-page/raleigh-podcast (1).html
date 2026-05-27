@@ -1,0 +1,129 @@
+<link rel="stylesheet" href="http://mcclatchy.com/static/creatives/podcasts/podcast-landing-pages.css"></link> 
+
+
+<style>
+	/*******
+Update the following color with market's color
+*******/
+.subscribe-section > a{
+  color: #BA2814;  /* MARKET ACCENT COLOR */
+	}
+
+	
+.mcdc-iframe{
+  display: block;
+  width: 100%;  
+  overflow: hidden; 
+  margin: 0px;
+  padding: 0px;
+  }
+	
+</style>
+
+
+<div class="main-wrapper container-fluid">
+ <div class="row">
+  <!---- 
+		******
+		Market Podcast Section 
+		*******
+	---->
+  <div class="market col-xs-12">
+      <!--- *** Update this with market name *** ---> <div class="section-heading">
+  The News & Observer Podcasts
+   </div>
+		
+
+<!--- ****** MARKET PODCAST CARD ****** --->		
+<div class="card container-fluid row">         
+   <div class="thumb">
+	  <a href="javascript:void(0)"> <!--- Update this IMG SRC---><img class="img-responsive col-xs-12 col-sm-4" alt="domecast artwork" src="https://cdn.rawgit.com/mjs2430/mcclatchy/master/images/domecast.png"></a>
+    </div>
+  <div class="info card-content col-xs-12">
+    <div class="podcast-title">
+		<a href="javascript:void(0)"><!--- Update This Title ---><p class="title">Domecast</p></a>
+    </div>
+<!--- Subscribe links section --->	
+ <div class="subscribe-section">
+      <a class="apple" data-sub="apple" href="https://itunes.apple.com/us/podcast/domecast-from-under-the-dome/id991911118?mt=2">
+        <img src="https://cdn.rawgit.com/mjs2430/mcclatchy/master/images/apple-logo.png" alt="apple logo"> Apple Podcasts
+      </a>
+      <a class="soundcloud" data-sub="soundcloud" href="https://soundcloud.com/underthedome-1">
+        <img src="https://cdn.rawgit.com/mjs2430/mcclatchy/master/images/soundcloud-logo.png" alt="soundcloud logo"> Soundcloud
+      </a>
+      <a class="stitcher" data-sub="stitcher" href="http://www.stitcher.com/podcast/the-news-observer/domecast-from-under-the-dome">
+        <img src="https://cdn.rawgit.com/mjs2430/mcclatchy/master/images/stitcher-logo.png" alt="stitcher logo"> Stitcher
+      </a>
+    </div><!--- End Subscribe links section --->
+    
+     <div class="podcast-description">
+    <!--- Update this text ---><p class="summary">Every week, the N&O and N.C. Insider politics staff takes you inside North Carolina government, political advocacy and the upcoming elections.</p>
+     </div>
+  </div>
+</div> <!--- ***** END MARKET PODCAST CARD ***** --->
+
+<!--- ****** MARKET PODCAST CARD ****** --->		
+<div class="card container-fluid row">         
+   <div class="thumb">
+	  <a href="javascript:void(0)"> <!--- Update this IMG SRC---><img class="img-responsive col-xs-12 col-sm-4" alt="the whistleblowers artwork" src="https://i1.sndcdn.com/avatars-000298122190-03pj8r-t500x500.jpg"></a>
+    </div>
+  <div class="info card-content col-xs-12">
+    <div class="podcast-title">
+		<a href="javascript:void(0)"><!--- Update This Title ---><p class="title">The Whistleblowers</p></a>
+    </div>
+<!--- Subscribe links section --->	
+ <div class="subscribe-section">
+      <a class="apple" data-sub="apple" href="https://itunes.apple.com/us/podcast/the-whistleblowers-podcast/id1200552843?mt=2">
+        <img src="https://cdn.rawgit.com/mjs2430/mcclatchy/master/images/apple-logo.png" alt="apple logo"> Apple Podcasts
+      </a>
+      <a class="soundcloud" data-sub="soundcloud" href="https://soundcloud.com/user-464895270/">
+        <img src="https://cdn.rawgit.com/mjs2430/mcclatchy/master/images/soundcloud-logo.png" alt="soundcloud logo"> Soundcloud
+      </a>
+    </div><!--- End Subscribe links section --->
+    
+     <div class="podcast-description">
+    <!--- Update this text ---><p class="summary">N&amp;O sports columnist Luke DeCock and Hall of Fame basketball referee John Clougherty explore events, issues and controversy in the world of officiating.</p>
+     </div>
+  </div>
+</div> <!--- ***** END MARKET PODCAST CARD ***** --->
+	
+  </div><!---- End Market Podcast Section ---->
+
+
+  <!---- 
+		******
+		MCDC IFRAME SECTION
+		*******
+	---->
+		<script>
+window.addEventListener("message", e => {
+  let d = e.data;
+
+  if(d.sentinel == 'gofer' && d.type == 'resize') {
+    let f = document.querySelector(`iframe[src="${d.location}"]`);
+    if(f && f.style) {
+      f.style.height = `${d.height}px`;
+    }
+  }
+});
+</script>
+	
+<iframe name="Framename" src="http://media.mcclatchydc.com/static/creatives/podcasts/mcdc-podcast-iframe.html"  frameborder="0" scrolling="auto" class="mcdc-iframe">
+</iframe>	
+
+
+  <!---- 
+		******
+		Around Mcclatchy IFRAME SECTION
+		*******
+	---->
+<iframe name="Framename" src="http://media.mcclatchydc.com/static/creatives/podcasts/around-archive-podcast-iframe.html"  frameborder="0" scrolling="auto" class="mcdc-iframe">
+</iframe>	
+
+ </div>
+ <!--- End content after masthead --->
+
+
+</div>
+<!---- End container ---->
+ 

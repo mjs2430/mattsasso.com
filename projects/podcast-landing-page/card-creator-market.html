@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<title>Top Podcast Card Creator</title>
+
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1, user-scalable=yes">
+
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="mobile-web-app-capable" content="yes">
+ <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <style type="text/css">
+        body {
+            padding-top: 5rem;
+        }
+        
+        .starter-template {
+            padding: 3rem 1.5rem;
+            text-align: center;
+        }
+    </style>
+
+	<link rel="stylesheet" href="https://cdn.rawgit.com/mjs2430/mcclatchy/master/fonts.css">
+	<link rel="stylesheet" href="market-card-styles.css">
+
+	<script src="podcast.js" defer></script>
+</head>
+
+<body>
+ <nav class="navbar navbar-expand-md navbar-dark bg-primary fixed-top">
+        <a class="navbar-brand" href="index.html">Home</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+                <li style="border:1px solid #ddd;border-radius: 10px;" class="nav-item">
+                    <a class="nav-link" href="card-creator-market.html">Top Podcast Card Creator</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="card-creator-mcdc.html">Secondary Podcast Card Creator</a>
+                </li>
+             <li class="nav-item">
+                    <a class="nav-link" href="card-creator-around.html">Around/Archive Podcast Creator</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="example-podcast-full-page.html">Content Studio Full Page Example</a>
+                </li>                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Templates</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown01">
+                        <a class="dropdown-item" href="biloxi-podcast.html">Biloxi template</a>
+						<a class="dropdown-item" href="centre-daily-times-podcast.html">Centre Daily template</a>
+						<a class="dropdown-item" href="charlotte-podcast.html">Charlotte template</a>
+						<a class="dropdown-item" href="el-nuevo-podcast.html">El Nuevo template</a>
+						<a class="dropdown-item" href="fresno-podcast.html">Fresno Bee template</a>
+						<a class="dropdown-item" href="kansas-city-podcast.html">Kansas City template</a>
+						<a class="dropdown-item" href="mcdc-podcast.html">McClatchy DC template</a>
+						<a class="dropdown-item" href="miami-podcast.html">Miami Herald template</a>
+						<a class="dropdown-item" href="raleigh-podcast.html">Raleigh template</a>
+ 						<a class="dropdown-item" href="star-telegram-podcast.html">Star-Telegram template</a>
+						<a class="dropdown-item" href="podcast-without-market-template.html">Template for markets with no podcasts</a>
+
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+<section>
+	<h1 class="light">Top Podcast Card Creator</h1>
+	<p style="color:red">Drag an image anywhere on this page to copy the url. This page was only tested in Google Chrome.</p>
+
+	<div>
+		<label>Image Alt Text (short description/title of artwork for SEO and screen readers)</label>
+		<input type="text" name="alt">
+	</div>
+	
+	<div>
+		<label>Podcast Name</label>
+		<input type="text" name="headline">
+	</div>
+
+	<div>
+		<label>Podcast Description</label>
+		<textarea name="summary" rows="4"></textarea>
+	</div>
+
+	<div>
+		<label>Apple Podcasts link</label>
+		<input type="text" name="apple">
+	</div>
+
+	<div>
+		<label>Soundcloud link</label>
+		<input type="text" name="soundcloud">
+	</div>
+
+	<div>
+		<label>Stitcher link</label>
+		<input type="text" name="stitcher">
+	</div>
+
+	<div>
+		<label>Google Play link</label>
+		<input type="text" name="google">
+	</div>
+
+	<div>
+		<label>Libsyn link</label>
+		<input type="text" name="libsyn">
+	</div>
+	
+	<div class="market" id="preview"></div>
+	<pre></pre>
+
+    <form method="post" action="https://script.google.com/a/mcclatchy.com/macros/s/AKfycbwL2WAsEbKGwps_KM-K0bCNNFOYNXz2AG4Xbv9nSpXejMkJS9i7/exec">
+      <input type="hidden" id="email-input" name="code">
+      <h4>Click the button below to show your code and notify McClatchy</h4>
+      <p style="font-size: 17px;">The button below will reveal the code you need and send an email to us letting us know a new podcast has been created.</p>   
+      <button class="btn btn-primary" type="submit">Get Code and Notify McClatchy</button>
+    </form>
+ 
+	<template id="code" >
+
+<!--- ****** MARKET PODCAST CARD ****** --->		
+<div class="card container-fluid row">         
+   <div class="thumb">
+	  <a href="javascript:void(0)"> <!--- Update this IMG SRC---><img class="img-responsive col-xs-12 col-sm-4" alt="undefined" src=" "></a>
+    </div>
+  <div class="info card-content col-xs-12">
+    <div class="podcast-title">
+		<a href="javascript:void(0)"><!--- Update This Title ---><p class="title"></p></a>
+    </div>
+<!--- Subscribe links section --->	
+ <div class="subscribe-section">
+      <a class="apple" data-sub="apple" href="undefined">
+        <img src="https://cdn.rawgit.com/mjs2430/mcclatchy/master/images/apple-logo.png" alt="apple logo"> Apple Podcasts
+      </a>
+      <a class="soundcloud" data-sub="soundcloud" href="undefined">
+        <img src="https://cdn.rawgit.com/mjs2430/mcclatchy/master/images/soundcloud-logo.png" alt="soundcloud logo"> Soundcloud
+      </a>
+      <a class="stitcher" data-sub="stitcher" href="undefined">
+        <img src="https://cdn.rawgit.com/mjs2430/mcclatchy/master/images/stitcher-logo.png" alt="stitcher logo"> Stitcher
+      </a>
+      <a class="google" data-sub="google" href="undefined">
+        <img src="https://cdn.rawgit.com/mjs2430/mcclatchy/master/images/google.png" alt="google play logo"> Google Play
+      </a>
+      <a class="libsyn" data-sub="libsyn" href="undefined">
+        <img src="https://cdn.rawgit.com/mjs2430/mcclatchy/master/images/libsyn.png" alt="libsyn logo"> Libsyn
+      </a>      
+    </div><!--- End Subscribe links section --->
+    
+     <div class="podcast-description">
+    <!--- Update this text ---><p class="summary"></p>
+     </div>
+  </div>
+</div> <!--- ***** END MARKET PODCAST CARD ***** --->
+
+
+</template>
+ </section>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script>
+        (function() {
+            'use strict'
+
+            if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+                var msViewportStyle = document.createElement('style')
+                msViewportStyle.appendChild(
+                    document.createTextNode(
+                        '@-ms-viewport{width:auto!important}'
+                    )
+                )
+                document.head.appendChild(msViewportStyle)
+            }
+
+        }())
+    </script>
+</body>
+
+</html>

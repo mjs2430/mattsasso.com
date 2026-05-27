@@ -1,0 +1,147 @@
+body {
+  margin: 0;
+  font: 16px/1.5 "mcclatchy-sans", sans-serif;
+}
+
+a {
+	text-decoration: none;
+	display: block;
+}
+
+section{
+  max-width: 900px;
+  margin: 1rem auto;
+  padding: 0 1rem;
+}
+
+h1 {
+  font-size: 1.5em;
+  font-weight: normal;
+}
+
+label {
+  display: block;
+  font-size: .9em;
+  font-weight: bold;
+  font-family: "mcclatchy-sans-cond", sans-serif;
+}
+
+textarea, input {
+  display: block;
+  font-size: 1.1rem;
+  padding: 5px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+section li {
+	margin: 30px 0;
+}
+
+nav {
+	height: 56px;
+	padding: 8px 0;
+}
+
+
+
+.navbar-collapse {
+	margin-top: 28px;
+}
+
+.info {
+  padding: 15px 25px 10px 25px;
+  box-sizing: border-box;
+  flex: 1;
+}
+
+.title {
+  font-size: 22px;
+  color: #333333;
+  font-weight: 400;
+  margin: 0 0 10px 0;
+}
+
+.summary {
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "mcclatchy sans", sans-serif;
+  max-width: 640px;
+}
+
+
+
+li {
+  margin-bottom: 30px;
+	 list-style-type: none;
+}
+ h3 {
+  font-family: 'mcclatchy-sans';
+  font-size: 20px;
+  font-weight: 400;
+  margin: 5px 0 15px;
+}
+ .subscribe-section {
+  border-bottom: 1px solid #9b9b9b;
+  padding-bottom: 10px;
+  margin: 0px;
+	 display: flex;
+}
+ .subscribe-section a {
+  width: 25%;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  padding: 0;
+  max-width: 75px;
+  margin-top: 5px;
+  border-right: 1px solid #cdcdcd;
+}
+ .subscribe-section a:last-of-type {
+  border-right: none;
+}
+ .subscribe-section .apple {
+  height: 30px;
+}
+ .subscribe-section .apple img {
+  margin: 0 auto 5px;
+  width: 22px;
+}
+ .subscribe-section .soundcloud {
+  padding-top: 4px;
+  height: 30px;
+}
+ .subscribe-section .soundcloud img {
+  width: 39px;
+  margin: 0 auto 5px;
+}
+ .subscribe-section .stitcher {
+  padding-top: 7px;
+  height: 30px;
+}
+.subscribe-section .stitcher img {
+  width: 34px;
+  margin: 0 6px 5px 8px;
+}
+.subscribe-section .google img {
+  width: 22px;
+}
+.subscribe-section .libsyn {
+  height: 30px;
+}
+	.subscribe-section .libsyn img {
+  width: 28px;
+}
+
+pre {
+  font-size: 13px;
+  background-color: #37474f;
+  padding: 1rem;
+	color: #fff;
+  box-sizing: border-box;
+max-width: 900px;
+	overflow-x: scroll;
+}

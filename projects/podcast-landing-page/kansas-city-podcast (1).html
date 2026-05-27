@@ -1,0 +1,127 @@
+<link rel="stylesheet" href="http://mcclatchy.com/static/creatives/podcasts/podcast-landing-pages.css"></link> 
+
+
+<style>
+	/*******
+Update the following color with market's color
+*******/
+.subscribe-section > a{
+  color: #0093D0;  /* MARKET ACCENT COLOR */
+	}
+
+	
+.mcdc-iframe{
+  display: block;
+  width: 100%;  
+  overflow: hidden; 
+  margin: 0px;
+  padding: 0px;
+  }
+	
+</style>
+
+
+<div class="main-wrapper container-fluid">
+ <div class="row">
+  <!---- 
+		******
+		Market Podcast Section 
+		*******
+	---->
+  <div class="market col-xs-12">
+      <!--- *** Update this with market name *** ---> <div class="section-heading">
+    The Kansas City Star Podcasts
+   </div>
+		
+<!--- ****** MARKET PODCAST CARD ****** --->		
+<div class="card container-fluid row">         
+   <div class="thumb">
+	  <a href="javascript:void(0)"> <!--- Update this IMG SRC---><img class="img-responsive col-xs-12 col-sm-4" alt="deep background artwork" src="https://cdn.rawgit.com/mjs2430/mcclatchy/master/images/deep-background.jpg"></a>
+    </div>
+  <div class="info card-content col-xs-12">
+    <div class="podcast-title">
+		<a href="javascript:void(0)"><!--- Update This Title ---><p class="title">Deep Background</p></a>
+    </div>
+<!--- Subscribe links section --->	
+ <div class="subscribe-section">
+      <a class="apple" data-sub="apple" href="https://itunes.apple.com/us/podcast/deep-background/id1099249701?mt=2">
+        <img src="https://cdn.rawgit.com/mjs2430/mcclatchy/master/images/apple-logo.png" alt="apple logo"> Apple Podcasts
+      </a>
+      <a class="libsyn" data-sub="libsyn" href="http://deepbackground.kcstar.libsynpro.com/">
+        <img src="https://cdn.rawgit.com/mjs2430/mcclatchy/master/images/libsyn.png" alt="libsyn logo"> Libsyn
+      </a>      
+    </div><!--- End Subscribe links section --->
+    
+     <div class="podcast-description">
+    <!--- Update this text ---><p class="summary">Every week, the Kansas City Star's writers and columnists offer in-depth commentary and analysis on the latest news, and Missouri and Kansas politics.</p>
+     </div>
+  </div>
+</div> <!--- ***** END MARKET PODCAST CARD ***** --->
+
+
+<!--- ****** MARKET PODCAST CARD ****** --->		
+<div class="card container-fluid row">         
+   <div class="thumb">
+	  <a href="javascript:void(0)"> <!--- Update this IMG SRC---><img class="img-responsive col-xs-12 col-sm-4" alt="sportsbeat kc artwork" src="https://cdn.rawgit.com/mjs2430/mcclatchy/master/images/sportsbeat.jpg"></a>
+    </div>
+  <div class="info card-content col-xs-12">
+    <div class="podcast-title">
+		<a href="javascript:void(0)"><!--- Update This Title ---><p class="title">SportsBeat KC</p></a>
+    </div>
+<!--- Subscribe links section --->	
+ <div class="subscribe-section">
+      <a class="apple" data-sub="apple" href="https://itunes.apple.com/us/podcast/sportsbeat-kc/id1050298530?mt=2">
+        <img src="https://cdn.rawgit.com/mjs2430/mcclatchy/master/images/apple-logo.png" alt="apple logo"> Apple Podcasts
+      </a>
+      <a class="libsyn" data-sub="libsyn" href="http://kcstar.kcstar.libsynpro.com">
+        <img src="https://cdn.rawgit.com/mjs2430/mcclatchy/master/images/libsyn.png" alt="libsyn logo"> Libsyn
+      </a>      
+    </div><!--- End Subscribe links section --->
+    
+     <div class="podcast-description">
+    <!--- Update this text ---><p class="summary">No matter the season, the Kansas City Star's sports writers and columnists are there to bring you in-depth commentary and analysis on the Royals, Chiefs, Sporting KC, FC Kansas City, KU, MU and K-State, Big 12 and the SEC.</p>
+     </div>
+  </div>
+</div> <!--- ***** END MARKET PODCAST CARD ***** --->
+
+	
+  </div><!---- End Market Podcast Section ---->
+
+
+  <!---- 
+		******
+		MCDC IFRAME SECTION
+		*******
+	---->
+		<script>
+window.addEventListener("message", e => {
+  let d = e.data;
+
+  if(d.sentinel == 'gofer' && d.type == 'resize') {
+    let f = document.querySelector(`iframe[src="${d.location}"]`);
+    if(f && f.style) {
+      f.style.height = `${d.height}px`;
+    }
+  }
+});
+</script>
+	
+<iframe name="Framename" src="http://media.mcclatchydc.com/static/creatives/podcasts/mcdc-podcast-iframe.html"  frameborder="0" scrolling="auto" class="mcdc-iframe">
+</iframe>	
+
+
+  <!---- 
+		******
+		Around Mcclatchy IFRAME SECTION
+		*******
+	---->
+<iframe name="Framename" src="http://media.mcclatchydc.com/static/creatives/podcasts/around-archive-podcast-iframe.html"  frameborder="0" scrolling="auto" class="mcdc-iframe">
+</iframe>	
+
+ </div>
+ <!--- End content after masthead --->
+
+
+</div>
+<!---- End container ---->
+ 
