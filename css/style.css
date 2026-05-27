@@ -48,6 +48,15 @@ h3 {
     font-weight: 600;
 }
 
+h4 {
+    font-size: 20px;
+    line-height: 36px;
+    letter-spacing: 1.5px;
+    margin: 0 0 10px;
+    color: #505050;
+    font-weight: 600;
+}
+
 
 h6 {
     font-size: 16px;
@@ -64,7 +73,7 @@ p {
     line-height: 30px;
     letter-spacing: 1;
     margin: 15px 0;
-    color: #6d6d6d;
+    color: #505050;
 }
 
 a {

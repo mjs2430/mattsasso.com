@@ -13,12 +13,12 @@ class Header extends HTMLElement {
     this.innerHTML = `
 <header>
     <a href="https://mattsasso.com">
-	<img src="https://mattsasso.com/img/logo-lg-color.png" alt="matt sasso logo">
+	<img src="../img/logo-lg-color.png" alt="matt sasso logo">
     </a>
 	<nav>
-		<a href="https://mattsasso.com/index.html">my work</a>
-		<a href="https://mattsasso.com/contact-me.html">contact me</a> 
-		<a href="https://mattsasso.com/about-me.html">about me</a> 
+		<a href="index.html">my work</a>
+		<a href="contact-me.html">contact me</a> 
+		<a href="about-me.html">about me</a> 
 	</nav> 
 </header>
         `
@@ -32,7 +32,6 @@ class Footer extends HTMLElement {
     this.innerHTML = 
       `
   <footer>
-    <a href="https://www.instagram.com/mjs2430/?hl=en" target="_blank" aria-label="instagram"><i class="fab fa-instagram"></i></a>
     <a href="https://github.com/mjs2430" target="_blank" aria-label="github"><i class="fab fa-github"></i></a>
     <a href="https://www.linkedin.com/in/mattsasso/" target="_blank" aria-label="linkedin"><i class="fab fa-linkedin"></i></a>
     <a href="https://codepen.io/mjs2430/" target="_blank" aria-label="codepen"><i class="fab fa-codepen"></i></a>
